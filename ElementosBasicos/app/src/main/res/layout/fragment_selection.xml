@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selección (Selection Controls)"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Permiten al usuario elegir entre varias opciones. CheckBox (múltiples), RadioButton (una sola) y Switch (estado binario)."
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="CheckBox: ¿Cuáles son tus hobbies?"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_programacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programación" />
+
+        <CheckBox
+            android:id="@+id/cb_musica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Música" />
+
+        <CheckBox
+            android:id="@+id/cb_deporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deporte" />
+
+        <CheckBox
+            android:id="@+id/cb_lectura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lectura" />
+
+        <Button
+            android:id="@+id/btn_verificar_hobbies"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verificar selección" />
+
+        <TextView
+            android:id="@+id/tv_resultado_hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="24dp"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton: Nivel de experiencia"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_nivel_experiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_principiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Principiante" />
+
+            <RadioButton
+                android:id="@+id/rb_intermedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intermedio" />
+
+            <RadioButton
+                android:id="@+id/rb_avanzado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avanzado" />
+
+            <RadioButton
+                android:id="@+id/rb_experto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experto" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_nivel_seleccionado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="24dp"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch: Configuraciones"
+            android:textStyle="bold" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_notificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificaciones" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_modo_oscuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modo Oscuro" />
+
+        <TextView
+            android:id="@+id/tv_estado_modo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_ubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación" />
+
+    </LinearLayout>
+</ScrollView>

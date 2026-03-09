@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botones (Buttons)"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="¿Cuál es la función de los botones? \nLos botones permiten al usuario realizar acciones con un solo toque. Existen diferentes estilos según su importancia.\nA continuación encontrarás los diferentes tipos de botones:"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Botón Normal"
+            app:cornerRadius="28dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_descripcion" />
+
+        <TextView
+            android:id="@+id/tv_contador_clics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Clics en botón normal: 0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_normal" />
+
+        <LinearLayout
+            android:id="@+id/layout_image_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_contador_clics">
+
+            <ImageButton
+                android:id="@+id/img_btn_camara"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Cámara"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <ImageButton
+                android:id="@+id/img_btn_compartir"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Compartir"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_share" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_outline"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Botón de Contorno (Outline)"
+            app:cornerRadius="28dp"
+            app:layout_constraintTop_toBottomOf="@id/layout_image_buttons" />
+
+        <Button
+            android:id="@+id/btn_deshabilitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="Botón deshabilitado"
+            app:cornerRadius="28dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_outline" />
+
+        <Button
+            android:id="@+id/btn_habilitar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Habilitar botón superior"
+            app:cornerRadius="28dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_deshabilitado" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Agregar"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_habilitar"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
