@@ -1,4 +1,4 @@
-```md
+
 # Elementos Básicos Android Studio
 
 ## Descripción de la aplicación
@@ -128,5 +128,4 @@ Este proyecto tiene fines educativos y busca:
 GitHub:
 https://github.com/WilliamsZeppeli
 
-```
 ```
