@@ -119,6 +119,21 @@ Este proyecto tiene fines educativos y busca:
 
 ## Capturas
 
+### Buttons 
+![Botones](Buttons.png)
+
+### TextFields 
+![Botones](TextFields.png)
+
+### Selection Controls 
+![Botones](SelectionControls.png)
+
+### RecyclerView 
+![Botones](RecyclerView.png)
+
+### Information Section 
+![Botones](Info.png)
+
 ---
 
 ## Autor
