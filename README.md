@@ -143,4 +143,3 @@ Este proyecto tiene fines educativos y busca:
 GitHub:
 https://github.com/WilliamsZeppeli
 
-```
